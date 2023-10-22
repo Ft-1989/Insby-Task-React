@@ -1,0 +1,95 @@
+:root{
+  --red: #e01714;
+  --black: #030303;
+  --white: #ffffff;
+  --gray: #969faa;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav a{
+  color: var(--black);
+}
+
+nav button{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--black);
+}
+
+.Card > div:last-child{
+  max-width: 600px;
+}
+
+.name{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.prices p{
+  border-radius: 1.5rem;
+  background: var(--black);
+  color: var(--white);
+}
+
+.prices p:last-child{
+  background: var(--red);
+}
+
+.SignUp, .Login{
+  min-height: 100vh;
+}
+
+.SignUp input, .Login input{
+  border-radius: 2rem;
+  outline: none;
+  border: 1px solid var(--black);
+}
+
+.SignUp input[type="submit"], .Login input[type="submit"]{
+  background: var(--red);
+  color: var(--white);
+  font-weight: 700;
+  border: 0;
+}
+
+.SignUp > div:last-child > p{
+  color: var(--gray);
+}
+
+.Login input[type="submit"]{
+  background: var(--black);
+}
+
+.SignUp > div:last-child, .Login > div:last-child > div{
+  max-width: 660px;
+}
+
+@media screen and (min-width: 1200px){
+  .Login {
+    background: linear-gradient(
+      to right,
+      var(--red) 0%, var(--red) 50%,
+      var(--white) 50%, var(--white) 100%
+    );
+  }
+}
