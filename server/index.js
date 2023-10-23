@@ -2,7 +2,6 @@ const express = require("express");
 const axios = require('axios');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const jwt = require('jsonwebtoken')
 const { v4: uuidv4 } = require('uuid');
 
 
