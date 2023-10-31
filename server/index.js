@@ -8,7 +8,6 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-app.use(require('cookie-parser')());
 
 const PORT = process.env.PORT || 3001;
 
@@ -27,7 +26,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/api", (req, res) => {
-  console.log("aaa")
+  console.log("Hello")
 });
 
 
